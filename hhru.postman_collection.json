@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "cfcc0eee-0795-4563-9662-b7f16928b123",
+		"name": "hhru",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Polo\",\r\n    \"lastName\": \"Polo\",\r\n    \"email\": \"polo@gmail.com\",\r\n    \"gender\": \"Muzik\",\r\n    \"address\": \"polo\",\r\n    \"city\": \"Polo\",\r\n    \"phone\": \"123123\",\r\n    \"status\": \"Polo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/hhru/postUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hhru",
+						"postUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Polo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/hhru/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hhru",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFlOTEwOWE2LTY5MWItNDM0MC05Njg5LTIzNThlZDE5ZjE2YiIsImlhdCI6MTczMjcyMTUwOCwiZXhwIjoxNzMyODA3OTA4fQ.-PUz0ERfz3Pjtzp9Xhp7EFLDKNZYfsZTPEV5GhRrC7I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Polo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/hhru/postClient/1e9109a6-691b-4340-9689-2358ed19f16b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hhru",
+						"postClient",
+						"1e9109a6-691b-4340-9689-2358ed19f16b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFlOTEwOWE2LTY5MWItNDM0MC05Njg5LTIzNThlZDE5ZjE2YiIsImlhdCI6MTczMjcyMTUwOCwiZXhwIjoxNzMyODA3OTA4fQ.-PUz0ERfz3Pjtzp9Xhp7EFLDKNZYfsZTPEV5GhRrC7I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/hhru/getClient/1e9109a6-691b-4340-9689-2358ed19f16b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hhru",
+						"getClient",
+						"1e9109a6-691b-4340-9689-2358ed19f16b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFlOTEwOWE2LTY5MWItNDM0MC05Njg5LTIzNThlZDE5ZjE2YiIsImlhdCI6MTczMjcyMTUwOCwiZXhwIjoxNzMyODA3OTA4fQ.-PUz0ERfz3Pjtzp9Xhp7EFLDKNZYfsZTPEV5GhRrC7I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/hhru/getMe/1e9109a6-691b-4340-9689-2358ed19f16b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hhru",
+						"getMe",
+						"1e9109a6-691b-4340-9689-2358ed19f16b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFlOTEwOWE2LTY5MWItNDM0MC05Njg5LTIzNThlZDE5ZjE2YiIsImlhdCI6MTczMjcyMTUwOCwiZXhwIjoxNzMyODA3OTA4fQ.-PUz0ERfz3Pjtzp9Xhp7EFLDKNZYfsZTPEV5GhRrC7I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Polooo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/hhru/updateClient/1e6e6cca-216b-4ae4-80c2-57cd03535fdb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hhru",
+						"updateClient",
+						"1e6e6cca-216b-4ae4-80c2-57cd03535fdb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFlOTEwOWE2LTY5MWItNDM0MC05Njg5LTIzNThlZDE5ZjE2YiIsImlhdCI6MTczMjcyMTUwOCwiZXhwIjoxNzMyODA3OTA4fQ.-PUz0ERfz3Pjtzp9Xhp7EFLDKNZYfsZTPEV5GhRrC7I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/hhru/deleteClient/9bee10dc-eb8c-42fe-a677-d8a9cd0766f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hhru",
+						"deleteClient",
+						"9bee10dc-eb8c-42fe-a677-d8a9cd0766f6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
