@@ -31,7 +31,15 @@ exports.addClient = catchAsync(async (req, res, next) => {
 exports.getClient = catchAsync(async (req, res, next) => {
   const user = await Users.findOne({ where: { uuid: req.params.uuid } });
   if (!user) return next(new AppError('User Not Found', 404));
-  const clients = await Clients.findAll({ where: { userId: user.id } });
+   var {
+    limit,
+    page,
+  } = req.query;
+    let offset = 0;
+
+  if (limit || page) offset = (page - 1) * limit;
+  const clients = await Clients.findAll({ where: { userId: user.id },  limit,
+    offset, });
   if (!clients) return next(new AppError('Not found', 404));
 
   return res.status(201).send(clients);
